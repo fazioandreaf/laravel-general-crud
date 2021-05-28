@@ -20,3 +20,4 @@ Route::get('/add', 'MainController@add')->name('add');
 Route::post('/add_function', 'MainController@add_function')->name('add_function');
 Route::get('/edit/{id}', 'MainController@edit')->name('edit');
 Route::post('/edit_function/{id}', 'MainController@edit_function')->name('edit_function');
+Route::get('/delete/{id}', 'MainController@delete')->name('delete');

@@ -56,4 +56,10 @@ class MainController extends Controller
         return redirect()->route('description',$match->id);
 
     }
+    function delete($id){
+        $match=Match::findOrFail($id);
+        $match->delete();
+        return redirect()->route('home');
+
+    }
 }

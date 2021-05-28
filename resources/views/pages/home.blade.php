@@ -14,6 +14,10 @@
     <a href="{{route('edit',$item->id)}}">
         edit
     </a>
+    /
+    <a href="{{route('delete',$item->id)}}">
+        delete
+    </a>
 </li>
     @endforeach
 </ul>
